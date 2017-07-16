@@ -38,6 +38,20 @@ namespace CSProject
             NameOfStaff = name;
             hourlyRate = rate;
         }
+
+        public virtual void CalculatePay()
+        {
+            Console.WriteLine("Calculating Pay...");
+
+            float BasicPay = hWorked * hourlyRate;
+
+            TotalPay = BasicPay;
+        }
+
+        public override string ToString()
+        {
+            return "Name of Staff = " + NameOfStaff + "hourlyRate = " + hourlyRate + "hworked = " + hWorked + "BasicPay = " + BasicPay + "TotalPay = " + TotalPay;
+        }
     }
     class Program
     {
