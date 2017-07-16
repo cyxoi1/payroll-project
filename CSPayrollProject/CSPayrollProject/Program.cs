@@ -50,9 +50,32 @@ namespace CSProject
 
         public override string ToString()
         {
-            return "Name of Staff = " + NameOfStaff + "hourlyRate = " + hourlyRate + "hworked = " + hWorked + "BasicPay = " + BasicPay + "TotalPay = " + TotalPay;
+            return "\nName of Staff = " + NameOfStaff + "\nhourlyRate = " + hourlyRate + "\nhworked = " + hWorked + "\nBasicPay = " + BasicPay + "\nTotalPay = " + TotalPay;
         }
     }
+
+    class Manager : Staff
+    {
+        private const float managerHourlyRate = 50;
+        
+        public int Allowance { get; private set; }
+
+        public Manager(string name) : base (name, managerHourlyRate) { }
+
+        public override void CalculatePay()
+        {
+            base.CalculatePay();
+            Allowance = 1000;
+            if (HoursWorked > 160)
+                TotalPay = BasicPay + Allowance;
+        }
+
+        public override string ToString()
+        {
+            return "\nNameofStaff = " + NameOfStaff + "\nmanagerHourlyRate = " + managerHourlyRate + "\nHoursWorked = " + HoursWorked + "\nBasicPay" + BasicPay + "\nAllowance = " + Allowance + "\nTotalPay = " + TotalPay;
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
