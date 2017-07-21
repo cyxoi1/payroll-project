@@ -2,7 +2,7 @@
 
 ## <a name="1"></a>Objectives
 
-We are going to get our feet wet by coding a complete console application that generates the salary slips of a small company.
+A complete console application that generates the salary slips of a small company.
 
 ## <a name="2"></a>Overview
 
