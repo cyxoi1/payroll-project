@@ -6,7 +6,7 @@ A complete console application that generates the salary slips of a small compan
 
 ## <a name="2"></a>Overview
 
-First, let’s create a new console application and name it `CSProject`.
+First, create a new console application and name it `CSProject`.
 
 This application consists of six classes as shown below.
 ```
@@ -25,5 +25,5 @@ The `FileReader` class contains a simple method that reads from a .txt file and 
 
 The `PaySlip` class generates the pay slip of each employee in the company. In addition, it also generates a summary of the details of staff who worked less than 10 hours in a month.
 
-Finally, the `Program` class contains the `Main()` method which acts as the main entry point of our application.
+Finally, the `Program` class contains the `Main()` method which acts as the main entry point of the application.
 
